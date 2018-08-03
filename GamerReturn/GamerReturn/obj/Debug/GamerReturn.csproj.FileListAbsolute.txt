@@ -1,0 +1,12 @@
+C:\Users\MQKK-ZC\source\repos\GamerReturn\GamerReturn\obj\Debug\GamerReturn.csproj.CoreCompileInputs.cache
+C:\Users\MQKK-ZC\source\repos\GamerReturn\GamerReturn\bin\GamerReturn.dll.config
+C:\Users\MQKK-ZC\source\repos\GamerReturn\GamerReturn\bin\GamerReturn.dll
+C:\Users\MQKK-ZC\source\repos\GamerReturn\GamerReturn\bin\GamerReturn.pdb
+C:\Users\MQKK-ZC\source\repos\GamerReturn\GamerReturn\bin\MySql.Data.dll
+C:\Users\MQKK-ZC\source\repos\GamerReturn\GamerReturn\bin\Newtonsoft.Json.dll
+C:\Users\MQKK-ZC\source\repos\GamerReturn\GamerReturn\bin\Google.Protobuf.dll
+C:\Users\MQKK-ZC\source\repos\GamerReturn\GamerReturn\obj\Debug\GamerReturn.csproj.CopyComplete
+C:\Users\MQKK-ZC\source\repos\GamerReturn\GamerReturn\obj\Debug\GamerReturn.dll
+C:\Users\MQKK-ZC\source\repos\GamerReturn\GamerReturn\obj\Debug\GamerReturn.pdb
+C:\Users\MQKK-ZC\source\repos\GamerReturn\GamerReturn\bin\SwaggerWcf.dll
+C:\Users\MQKK-ZC\source\repos\GamerReturn\GamerReturn\bin\Newtonsoft.Json.xml
