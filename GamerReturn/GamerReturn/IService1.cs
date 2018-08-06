@@ -25,6 +25,13 @@ namespace GamerReturn
 
         // TODO: 在此添加您的服务操作
 
+
+        /// <summary>
+        /// 验证登陆用户是否符合领取奖励的资格
+        /// </summary>
+        /// <param name="UserId"></param>
+        /// <param name="PartnerId"></param>
+        /// <returns></returns>
         [OperationContract]
 
         [WebInvoke(Method = "POST",
@@ -34,6 +41,14 @@ namespace GamerReturn
             ResponseFormat = WebMessageFormat.Json)]
         ReturnMessageBody IsOldGamer(string UserId,string PartnerId);
 
+
+
+        /// <summary>
+        /// 用户确认领取奖励，领取成功后就不能再次领取
+        /// </summary>
+        /// <param name="UserId"></param>
+        /// <param name="PartnerId"></param>
+        /// <returns></returns>
         [OperationContract]
 
         [WebInvoke(Method = "POST",
