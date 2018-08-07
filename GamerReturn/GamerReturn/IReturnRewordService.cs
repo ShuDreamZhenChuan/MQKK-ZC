@@ -5,32 +5,24 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using Moqikaka.GamerReturn.Model;
 
-namespace GamerReturn
+namespace Moqikaka.GamerReturn
 {
-    // 注意: 使用“重构”菜单上的“重命名”命令，可以同时更改代码和配置文件中的接口名“IService1”。
     [ServiceContract]
     
-    public interface IService1
+    public interface IReturnRewordService
     {
 
         [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "getuser/{name}", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         string GetData(string name);
 
-
-
-        [OperationContract]
-        CompositeType GetDataUsingDataContract(CompositeType composite);
-
-        // TODO: 在此添加您的服务操作
-
-
         /// <summary>
         /// 验证登陆用户是否符合领取奖励的资格
         /// </summary>
-        /// <param name="UserId"></param>
-        /// <param name="PartnerId"></param>
+        /// <param name="userId"></param>
+        /// <param name="partnerId"></param>
         /// <returns></returns>
         [OperationContract]
 
@@ -39,15 +31,13 @@ namespace GamerReturn
             BodyStyle = WebMessageBodyStyle.WrappedRequest,
             RequestFormat = WebMessageFormat.Json,
             ResponseFormat = WebMessageFormat.Json)]
-        ReturnMessageBody IsOldGamer(string UserId,string PartnerId);
-
-
+        ReturnMessageBody IsOldGamer(string userId,string partnerId);
 
         /// <summary>
         /// 用户确认领取奖励，领取成功后就不能再次领取
         /// </summary>
-        /// <param name="UserId"></param>
-        /// <param name="PartnerId"></param>
+        /// <param name="userId"></param>
+        /// <param name="partnerId"></param>
         /// <returns></returns>
         [OperationContract]
 
@@ -56,10 +46,9 @@ namespace GamerReturn
            BodyStyle = WebMessageBodyStyle.WrappedRequest,
            RequestFormat = WebMessageFormat.Json,
            ResponseFormat = WebMessageFormat.Json)]
-        ReturnMessageBody GetReward(string UserId, string PartnerId);
+        ReturnMessageBody GetReward(string userId, string partnerId);
 
     }
-
 
     // 使用下面示例中说明的数据约定将复合类型添加到服务操作。
     [DataContract]

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace GamerReturn
+namespace Moqikaka.GamerReturn.Model
 {
     public class ReturnMessageBody
     {
