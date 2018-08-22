@@ -16,9 +16,11 @@ using Moqikaka.GamerReturn.Model;
 
 namespace Moqikaka.GamerReturn.DAL
 {
+    /// <summary>
+    /// 奖励信息数据库操作类
+    /// </summary>
     public class RewordDAL
     {
-
         /// <summary>
         /// 获取用户领取奖励的日志
         /// </summary>

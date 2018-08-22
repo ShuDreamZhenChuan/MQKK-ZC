@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 using MySql.Data.MySqlClient;
 using System.Reflection;
 
-namespace Moqikaka.GamerReturn
+namespace Moqikaka.GamerReturn.Model
 {
     class SqlHelper
     {
@@ -26,6 +26,7 @@ namespace Moqikaka.GamerReturn
                 Console.WriteLine(ex.Message);
             }
         }
+
         /// <summary>
         /// 传入参数建立SQL连接
         /// </summary>
@@ -86,7 +87,6 @@ namespace Moqikaka.GamerReturn
             {
                 try
                 {
-
                     mysqlConnection.Open();
                     Console.WriteLine("MysqlConnection Opened.");
                     MySqlCommand mysqlCommand = new MySqlCommand(sql, mysqlConnection);
@@ -95,7 +95,6 @@ namespace Moqikaka.GamerReturn
                         mysqlCommand.Parameters.AddRange(new MySqlParameter[] { new MySqlParameter(key, MySqlDbType.VarChar) { Value = pairs[key] } });
                     }
                     return mysqlCommand.ExecuteNonQuery();
-
                 }
                 catch (MySqlException ex)
                 {
@@ -104,10 +103,6 @@ namespace Moqikaka.GamerReturn
                     {
                         Console.WriteLine(ex.Message);
                     }
-                }
-                finally
-                {
-                    mysqlConnection.Close();
                 }
             }
             return -1;
@@ -132,10 +127,6 @@ namespace Moqikaka.GamerReturn
                 catch (MySqlException ex)
                 {
                     Console.WriteLine(ex.Message);
-                }
-                finally
-                {
-                    mysqlConnection.Close();
                 }
             }
             return dataView;
@@ -168,10 +159,6 @@ namespace Moqikaka.GamerReturn
                 {
                     Console.WriteLine(ex.Message);
                 }
-                finally
-                {
-                    mysqlConnection.Close();
-                }
             }         
             return dataTable;
         }
@@ -196,13 +183,8 @@ namespace Moqikaka.GamerReturn
                 {
                     return -1;
                     // Console.WriteLine(ex.Message);
-                }
-                finally
-                {
-                    mysqlConnection.Close();
-                }
+                }              
             }        
-            // return 0;
         }
 
         /// <summary>

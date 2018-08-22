@@ -1,18 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Moqikaka.GamerReturn.Model
 {
+    /// <summary>
+    /// 登录信息数据实体
+    /// </summary>
     public class LoginInfo
     {
-        public string UserId { get; set; }      //登录用户ID
+        /// <summary>
+        /// 用户ID
+        /// </summary>
+        public string UserId { get; set; }      
 
-        public string PartnerId { get; set; }   //合作商ID
+        /// <summary>
+        /// 合作商ID
+        /// </summary>
+        public string PartnerId { get; set; } 
 
-        public string PlayerId { get; set; }    //角色ID
+        /// <summary>
+        /// 游戏角色ID
+        /// </summary>
+        public string PlayerId { get; set; }    
 
-        public DateTime LoginTime { get; set; }   //登录时间
+        /// <summary>
+        /// 登录时间
+        /// </summary>
+        public DateTime LoginTime { get; set; }   
     }
 }
