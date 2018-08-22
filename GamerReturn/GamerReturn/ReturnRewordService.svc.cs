@@ -150,7 +150,10 @@ namespace Moqikaka.GamerReturn
         /// <returns></returns>
         public ReturnMessageBody GetReward(string userId, string partnerId)
         {
+
             //Git测试（matser提交）
+
+            //Git测试(dev分支修改)
 
             //构建标准的响应回复数据结构对象
             ReturnMessageBody returnMsg = new ReturnMessageBody();
