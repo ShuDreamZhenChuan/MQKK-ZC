@@ -150,6 +150,8 @@ namespace Moqikaka.GamerReturn
         /// <returns></returns>
         public ReturnMessageBody GetReward(string userId, string partnerId)
         {
+            //增加了一个新功能 
+            //又增加了一个新功能
             //修改了一个BUG
             //又修改了一个BUG
             //增加了一个新功能
