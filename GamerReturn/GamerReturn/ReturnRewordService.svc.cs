@@ -151,6 +151,7 @@ namespace Moqikaka.GamerReturn
         public ReturnMessageBody GetReward(string userId, string partnerId)
         {
             //修改了一个BUG
+            //又修改了一个BUG
             //增加了一个新功能
 
             //构建标准的响应回复数据结构对象
