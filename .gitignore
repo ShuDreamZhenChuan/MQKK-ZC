@@ -1,0 +1,12 @@
+#git忽略以下文件
+*.exe
+*.test
+*.prof
+config.xml
+*.suo
+bin
+.vs/
+app.config
+web.config
+obj/
+
